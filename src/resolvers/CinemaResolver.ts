@@ -22,7 +22,6 @@ export class CinemaResolver {
             seats.push(Seat.create({ cinema_id: cinema.id, seat_number: seat_number, status: SeatStatus.EMPTY }));
         }
         Seat.insert(seats);
-        console.log(cinema.id);
         return cinema;
     }
 
